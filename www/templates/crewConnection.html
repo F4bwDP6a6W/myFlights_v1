@@ -1,0 +1,19 @@
+<ion-view id="crewConnection">
+  <ion-nav-title>Crew Connection</ion-nav-title>
+  <ion-content padding="true" class="has-header">
+    <form id="crewConnection-form1" class="list">
+      <ion-list id="crewConnection-list1">
+        <label class="item item-input" id="crewConnection-input1">
+          <span class="input-label">User ID</span>
+          <input type="text" placeholder="0000033333" ng-model="user.username">
+        </label>
+        <label class="item item-input" id="crewConnection-input2">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="user.password">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button id="crewConnection-button1" class="button button-stable  button-block" ng-click="Login()">登录</button>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,93 @@
+<ion-view>
+  <ion-nav-title>个人信息</ion-nav-title>
+  <ion-content padding="true" class="has-header x-small">
+    <ion-grid>
+      <ion-row class="row">
+        <ion-col class="col col-40 noPadding"> {{ statusInfos[0] }} </ion-col>
+        <ion-col class="col col-30 noPadding"> {{ statusInfos[1] }} </ion-col>
+        <ion-col class="col col-15 noPadding"> {{ statusInfos[2] }} </ion-col>
+        <ion-col class="col col-15 noPadding"> {{ statusInfos[3] }} </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-100 noPadding"> {{ statusInfos[4] }} </ion-col>
+      </ion-row>
+      <ion-row class="row header">
+        <ion-col class="col col-100 noPadding"> Actual Flight Time </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-25 noPadding"> latest30Days </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[0] }} </ion-col>
+        <ion-col class="col col-25 noPadding"> currentMonth </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[1] }} </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-25 noPadding"> latest90Days </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[2] }} </ion-col>
+        <ion-col class="col col-25 noPadding"> latest1Year </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[3] }} </ion-col>
+      </ion-row>
+      <ion-row class="row header">
+        <ion-col class="col col-100 noPadding"> Actual Duty Time </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-25 noPadding"> latest30Days </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[4] }} </ion-col>
+        <ion-col class="col col-25 noPadding"> currentMonth </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[5] }} </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-25 noPadding"> latest90Days </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[6] }} </ion-col>
+        <ion-col class="col col-25 noPadding"> latest1Year </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[7] }} </ion-col>
+      </ion-row>
+      <ion-row class="row header">
+        <ion-col class="col col-100 noPadding"> Dead Head Time </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-25 noPadding"> latest30Days </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[8] }} </ion-col>
+        <ion-col class="col col-25 noPadding"> currentMonth </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[9] }} </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col col-25 noPadding"> latest90Days </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[10] }} </ion-col>
+        <ion-col class="col col-25 noPadding"> latest1Year </ion-col>
+        <ion-col class="col col-25 noPadding"> {{ flightReport[11] }} </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-view>
+
+<style type="text/css">
+
+  .x-small{
+    font-size: x-small;
+  }
+
+  .header .col {
+    background-color:lightgrey;
+    text-align: center;
+  }
+
+  .col {
+    border: solid 0.5px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+    text-align: center;
+  }
+
+  .col:last-child {
+    border-right: solid 0.5px grey;
+  }
+
+  .row:last-child .col {
+    border-bottom: solid 0.5px grey;
+  }
+
+  .col.noPadding{
+    padding:0;
+
+  }
+</style>

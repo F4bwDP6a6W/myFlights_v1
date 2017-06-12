@@ -1,0 +1,45 @@
+<ion-view>
+  <ion-nav-title>组员信息</ion-nav-title>
+  <ion-content padding="true" class="has-header x-small">
+    <ion-grid>
+      <ion-row class="row">
+        <ion-col class="col col-40 noPadding"> {{ statusInfos[0] }} </ion-col>
+        <ion-col class="col col-30 noPadding"> {{ statusInfos[1] }} </ion-col>
+        <ion-col class="col col-15 noPadding"> {{ statusInfos[2] }} </ion-col>
+        <ion-col class="col col-15 noPadding"> {{ statusInfos[3] }} </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-view>
+
+<style type="text/css">
+
+  .x-small{
+    font-size: x-small;
+  }
+
+  .header .col {
+    background-color:lightgrey;
+    text-align: center;
+  }
+
+  .col {
+    border: solid 0.5px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+    text-align: center;
+  }
+
+  .col:last-child {
+    border-right: solid 0.5px grey;
+  }
+
+  .row:last-child .col {
+    border-bottom: solid 0.5px grey;
+  }
+
+  .col.noPadding{
+    padding:0;
+
+  }
+</style>

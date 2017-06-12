@@ -1,0 +1,64 @@
+<ion-view view-title="我的排班">
+  <ion-content padding="false" class="has-header">
+    <div class="row header xx-small">
+      <div class="col col-10 noPadding">Start Date</div>
+      <div class="col col-8 noPadding">Day</div>
+      <div class="col col-8 noPadding">Flt Num</div>
+      <div class="col col-10 noPadding">Sector</div>
+      <div class="col col-8 noPadding">A/C</div>
+      <div class="col col-8 noPadding">Duty</div>
+      <div class="col col-8 noPadding">Rpt</div>
+      <div class="col col-8 noPadding">STD</div>
+      <div class="col col-8 noPadding">STA</div>
+      <div class="col col-8 noPadding">Flt Time</div>
+      <div class="col col-8 noPadding">Duty Time</div>
+      <div class="col col-8 noPadding">Hotel</div>
+    </div>
+
+    <div class="row xx-small"  ng-repeat="task in tasks">
+      <div class="col col-10 noPadding">{{ task.startDate }}</div>
+      <div class="col col-8 noPadding">{{ task.Day }}</div>
+      <div class="col col-8 noPadding">{{ task.FltNum }}</div>
+      <div class="col col-10 noPadding">{{ task.Sector }}</div>
+      <div class="col col-8 noPadding">{{ task.AC }}</div>
+      <div class="col col-8 noPadding">{{ task.Duty }}</div>
+      <div class="col col-8 noPadding">{{ task.Rpt }}</div>
+      <div class="col col-8 noPadding">{{ task.STD }}</div>
+      <div class="col  noPadding">{{ task.STA }}</div>
+      <div class="col col-8 noPadding">{{ task.FltTime }}</div>
+      <div class="col col-8 noPadding">{{ task.DutyTime }}</div>
+      <div class="col col-8 noPadding">{{ task.Hotel }}</div>
+    </div>
+  </ion-content>
+</ion-view>
+
+<style type="text/css">
+  .xx-small{
+    font-size: 0.4rem;
+  }
+  .header .col {
+    background-color:lightgrey;
+    text-align: center;
+  }
+
+  .col {
+    border: solid 0.5px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+    text-align: center;
+  }
+
+  .col:last-child {
+    border-right: solid 0.5px grey;
+  }
+
+  .row:last-child .col {
+    border-bottom: solid 0.5px grey;
+  }
+
+  .col.noPadding{
+    padding:0;
+
+  }
+
+</style>
